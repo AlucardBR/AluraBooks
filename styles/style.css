@@ -1,0 +1,36 @@
+@import url("/styles/header.css");
+@import url(/styles/banner.css);
+@import url(/styles/carrossel.css);
+@import url(/styles/topicos.css);
+@import url(/styles/contato.css);
+@import url(/styles/rodape.css);
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --cor-1: #FFFFFF;
+    --cor-2: #002F52;
+    --cor-3: #EB9B00;
+    --cor-4: #000000;
+    --cor-5: #C4C4C4;
+    --cor-6: #474646;
+    --cor-7: #858585;
+    --cor-8: #F9F9F9;
+    --cor-9: #EBECEE;
+    --fonte-primaria: "Poppins", serif;
+    --fonte-secundaria: "Josefin Sans", serif;
+    --azul-degrade: linear-gradient(97deg, #002f52 35%, #326589 167%);
+    --azul-degrade2: linear-gradient(
+        90deg,
+        hsl(206deg 100% 16%) 0%,
+        hsl(206deg 88% 20%) 36%,
+        hsl(205deg 79% 24%) 72%,
+        hsl(205deg 68% 28%) 89%,
+        hsl(205deg 57% 33%) 97%,
+        hsl(205deg 47% 37%) 100%);
+
+body {
+    background-color: var(--cor-9);
+    font-family: var(--fonte-primaria);
+    font-size: 1rem;
+    font-weight: 400;
+}

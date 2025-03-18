@@ -1,0 +1,139 @@
+.cabecalho_menu_hamburguer {
+    width: 24px;
+    height: 24px;
+    background-image: url(/assets/Menu.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+
+.cabecalho {
+    background-color: var(--cor-1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.container_imagem, .container_imagem_logo{
+    padding: 1rem;
+}
+
+.lista-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 65vw;
+}
+
+.lista-menu_titulo,.lista-menu_item{
+    padding: 1rem;
+    background-color: var(--cor-1);
+}
+
+.lista-menu_titulo {
+    color: var(--cor-3);                     
+    font-weight: bold;
+}
+
+
+.lista-menu_links {
+    text-decoration: none;
+    color: var(--cor-2)
+}
+
+.container_botao:checked~.lista-menu{
+    display: block;
+}
+
+.container_botao {
+    display: none;
+}
+
+.container_titulo,.opcoes {
+    display: none;
+}
+
+
+@media screen and (min-width: 1024px)  {
+
+    .cabecalho {
+        padding: 1.2rem 3.5rem;
+        
+    }
+
+    .container_titulo {
+        font-size: 30px;
+        font-weight: 500;
+        font-family: var(--fonte-secundaria);
+        display: flex;
+        padding-top: 6px;
+    }
+    
+    .container_titulo--negrito {
+        font-weight: 700;
+    }
+
+    .opcoes {
+        display: flex;
+    }
+
+    .opcoes_link {
+        text-decoration: none;
+        color: var(--cor-4);
+    }
+    
+    .opcoes_item {
+        padding: 0 1.5rem;
+    }
+
+    .container_transparente {
+        display: none;
+    }
+
+    .cabecalho_menu_hamburguer {
+        display: none;
+    }
+    
+    .container_imagem {
+        padding: 0;
+    }
+
+    .container_imagem_logo {
+        padding-right: .5rem;
+    }
+    .container_imagem_carrinho {
+        padding-right: 1.5rem;
+    }
+    .container_imagem_usuario {
+        padding-left: 1.5rem;
+    }
+    
+    .opcoes_botao {
+        display: none;
+    }
+
+    .opcoes_botao:checked~.lista-menu {
+        display: block;
+        width: auto;
+    }
+
+    .lista-menu_item:hover {
+        color: var(--cor-1);
+        background: var(--azul-degrade2);
+
+    }
+    .lista-menu_links:hover {
+        color: var(--cor-1);
+    }
+
+}
+
+@media screen and (min-width: 1728px) {
+    
+}
