@@ -10,13 +10,13 @@
 }
 
 .contato_texto {
-    color: var(--azul-degrade2);
+    color: var(--cor-2);
     font-weight: 300;
     margin: 1rem 0;
 }
 
 .contato_email {    
-    border: 1px solid var(--cor-4);
+    border: 1px solid var(--cor-2);
     border-radius: 2rem;
     padding: .8rem;
     width: 90%;
@@ -27,7 +27,7 @@
     background-repeat: no-repeat;
     background-position: .8rem;
     padding-left: 2.6rem;
-    color: var(--cor-4);
+    color: var(--cor-2);
     font-family: var(--fonte-primaria);
 }
 
@@ -52,5 +52,17 @@
 }
 
 @media screen and (min-width: 1728px) {
-    
+    .contato{
+        padding: 4rem 25vw;
+    }
+    .contato_email {
+        width: 50%;
+    }
+    .contato_titulo{
+        font-size: 24px;
+        margin-right: 0;
+    }
+    .contato_texto {
+        margin-right: 7rem;
+    }
 }

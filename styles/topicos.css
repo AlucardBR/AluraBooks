@@ -27,7 +27,7 @@
 .topicos_links {
     text-decoration: none;
     color: var(--cor-1);
-    font-weight: 700;
+    font-weight: 600;
     font-size: 14px;
     background-color: var(--cor-3);
     padding: 1rem 1.4rem;
@@ -52,5 +52,13 @@
 }
 
 @media screen and (min-width: 1728px) {
-    
+    .topicos_titulo {
+        font-size: 32px;
+        padding: 0 0 2rem 0;
+        
+    }
+    .topicos { 
+        padding: 3rem 25vw;
+    }
+
 }

@@ -15,6 +15,14 @@
     position: relative;
 }
 
+.container_botao:checked~.container_rotulo>.cabecalho_menu_hamburguer {
+    background-image: url(/assets/Menu\ Aberto.svg);
+}
+
+.container_botao:checked~.container_rotulo {
+    background: var(--azul-degrade2);
+}
+
 .container {
     display: flex;
     align-items: center;
@@ -58,6 +66,9 @@
 .container_titulo,.opcoes {
     display: none;
 }
+.container_texto {
+    display: none;
+}
 
 
 @media screen and (min-width: 1024px)  {
@@ -69,10 +80,10 @@
 
     .container_titulo {
         font-size: 30px;
-        font-weight: 500;
+        font-weight: 400;
         font-family: var(--fonte-secundaria);
         display: flex;
-        padding-top: 6px;
+        padding-top: .5rem;
     }
     
     .container_titulo--negrito {
@@ -89,7 +100,7 @@
     }
     
     .opcoes_item {
-        padding: 0 1.5rem;
+        padding: .8rem 1.5rem;
     }
 
     .container_transparente {
@@ -123,17 +134,48 @@
         width: auto;
     }
 
-    .lista-menu_item:hover {
-        color: var(--cor-1);
+    .opcoes_botao:checked~.opcoes_rotulo>.opcoes_item {
         background: var(--azul-degrade2);
-
-    }
-    .lista-menu_links:hover {
         color: var(--cor-1);
     }
+    .lista-menu_item:hover {
+        background: var(--azul-degrade2);
+    }
+    
+    .lista-menu_item:hover>.lista-menu_links {
+        -webkit-text-fill-color: var(--cor-1);
+        text-decoration: none;
+    }
+
 
 }
 
 @media screen and (min-width: 1728px) {
-    
+    .container_links {
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        
+    }
+    .container_texto {
+        color: var(--cor-4);
+        font-size: 20px;
+        display: block;
+    }
+    .container_titulo {
+        padding-right: 3rem;
+    }
+    .opcoes {
+        margin-right: auto;
+    }
+
+    .container_imagem_logo {
+        padding-right: .8rem;
+    }
+    .container_imagem_carrinho {
+        padding-right: .5rem;
+    }
+    .container_imagem_usuario {
+        padding: 0 .5rem 0 4rem;
+    }
 }
